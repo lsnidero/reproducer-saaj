@@ -131,7 +131,7 @@
         <dependency>
             <groupId>com.sun.xml.ws</groupId>
             <artifactId>rt</artifactId>
-            <version>2.3.2</version>
+            <version>2.3.1</version>
         </dependency>
         <!--fix per java > 1.8 end-->
 
@@ -152,8 +152,6 @@
                 </executions>
                 <configuration>
                     <wsdlUrls>
-                        <!-- <wsdlUrl>https://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php?wsdl</wsdlUrl>-->
-                        <!--<wsdlUrl>http://localhost:8080/service/studentDetailsWsdl.wsdl</wsdlUrl>-->
                         <wsdlUrl>https://www.dataaccess.com/webservicesserver/TextCasing.wso?WSDL</wsdlUrl>
                     </wsdlUrls>
                     <keep>true</keep>
