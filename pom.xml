@@ -4,11 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>it.redhat.reproducer.saaj</groupId>
     <artifactId>test-saaj</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
     <name>test-saaj</name>
     <description>Test Reproducer</description>
     <properties>
         <revision>1.0-SNAPSHOT</revision>
-        <java.version>11</java.version>
+        <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.3.4.RELEASE</spring-boot.version>
@@ -127,32 +128,12 @@
             <version>4.5.12</version>
         </dependency>
         <!--fix per java > 1.8 start-->
-
-        <!--
-        <dependency>
-            <groupId>com.sun.xml.messaging.saaj</groupId>
-            <artifactId>saaj-impl</artifactId>
-            <version>1.5.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>javax.xml.ws</groupId>
-            <artifactId>jaxws-api</artifactId>
-            <version>2.3.1</version>
-        </dependency>
-
         <dependency>
             <groupId>com.sun.xml.ws</groupId>
             <artifactId>rt</artifactId>
             <version>2.3.1</version>
         </dependency>
--->
         <!--fix per java > 1.8 end-->
-        <dependency>
-            <groupId>com.sun.xml.ws</groupId>
-            <artifactId>rt</artifactId>
-            <version>2.3.1</version>
-        </dependency>
 
     </dependencies>
     <build>
@@ -169,31 +150,6 @@
                     </execution>
 
                 </executions>
-                <dependencies>
-
-                    <dependency>
-                        <groupId>javax.annotation</groupId>
-                        <artifactId>javax.annotation-api</artifactId>
-                        <version>1.3.2</version>
-                    </dependency>
-
-                    <dependency>
-                        <groupId>javax.xml.bind</groupId>
-                        <artifactId>jaxb-api</artifactId>
-                        <version>2.3.1</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>javax.xml.ws</groupId>
-                        <artifactId>jaxws-api</artifactId>
-                        <version>2.3.1</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>javax.jws</groupId>
-                        <artifactId>javax.jws-api</artifactId>
-                        <version>1.1</version>
-                    </dependency>
-                </dependencies>
-
                 <configuration>
                     <wsdlUrls>
                         <!-- <wsdlUrl>https://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php?wsdl</wsdlUrl>-->
